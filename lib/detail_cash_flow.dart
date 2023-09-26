@@ -14,12 +14,24 @@ class _detail_cash_flowState extends State<detail_cash_flow> {
       appBar: AppBar(
         title: const Text('Detail Cash flow'),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: const <Widget>[
-            Text('Halaman detail cash flow'),
-          ],
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Card(
+            child: ListTile(
+              title: Text("Rp. 20.000"),
+              subtitle: Text("makan"),
+              leading: Container(
+                child: Icon(
+                  Icons.upload,
+                  color: Colors.red,
+                ),
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(8)),
+              ),
+            ),
+          ),
         ),
       ),
     );

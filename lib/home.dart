@@ -23,10 +23,14 @@ class _HomePageState extends State<HomePage> {
         padding: const EdgeInsets.all(25),
         crossAxisCount: 2,
         children: <Widget>[
-          Padding(padding: const EdgeInsets.all(0)),
-          Text("Jumlah Transaksi: 20.000"),
+          Padding(
+            padding: const EdgeInsets.all(16),
+          child: Text("Pemasukan"),
+            ),
+
+
           Card(
-            margin: const EdgeInsets.all(8),
+            margin: const EdgeInsets.all(0),
             child: InkWell(
               onTap: () {
                 Navigator.push(
