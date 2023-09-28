@@ -23,12 +23,6 @@ class _HomePageState extends State<HomePage> {
         padding: const EdgeInsets.all(25),
         crossAxisCount: 2,
         children: <Widget>[
-          Padding(
-            padding: const EdgeInsets.all(16),
-          child: Text("Pemasukan"),
-            ),
-
-
           Card(
             margin: const EdgeInsets.all(0),
             child: InkWell(
@@ -43,10 +37,15 @@ class _HomePageState extends State<HomePage> {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: const <Widget>[
-                    Icon(
-                      Icons.money_outlined,
-                      size: 70,
-                      color: Colors.redAccent,
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Center(
+                        child: Image(
+                          image: AssetImage('pemasukan.jpg'),
+                          height: 75,
+                          width: 75,
+                        ),
+                      ),
                     ),
                     Text("Tambah Pemasukan", style: TextStyle(fontSize: 17.0)),
                   ],
@@ -68,10 +67,15 @@ class _HomePageState extends State<HomePage> {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: const <Widget>[
-                    Icon(
-                      Icons.money_outlined,
-                      size: 70,
-                      color: Colors.red,
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Center(
+                        child: Image(
+                          image: AssetImage('pengeluaran.jpg'),
+                          height: 75,
+                          width: 75,
+                        ),
+                      ),
                     ),
                     Text("Tambah Pengeluaran",
                         style: TextStyle(fontSize: 17.0)),
@@ -94,10 +98,15 @@ class _HomePageState extends State<HomePage> {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: const <Widget>[
-                    Icon(
-                      Icons.money,
-                      size: 70,
-                      color: Colors.greenAccent,
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Center(
+                        child: Image(
+                          image: AssetImage('flow.jpg'),
+                          height: 75,
+                          width: 75,
+                        ),
+                      ),
                     ),
                     Text("Detail Cash Flow", style: TextStyle(fontSize: 17.0)),
                   ],
@@ -119,10 +128,15 @@ class _HomePageState extends State<HomePage> {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: const <Widget>[
-                    Icon(
-                      Icons.settings,
-                      size: 70,
-                      color: Colors.blueGrey,
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Center(
+                        child: Image(
+                          image: AssetImage('setting.jpg'),
+                          height: 75,
+                          width: 75,
+                        ),
+                      ),
                     ),
                     Text("Pengaturan", style: TextStyle(fontSize: 17.0)),
                   ],

@@ -8,6 +8,7 @@ class login extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.green,
         title: const Text('Buku Kas'),
       ),
       body: SafeArea(
@@ -16,6 +17,16 @@ class login extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Center(
+                    child: Image(
+                      image: AssetImage('logo.jpg'),
+                      height: 200,
+                      width: 200,
+                    ),
+                  ),
+                ),
                 Text("Username"),
                 TextField(),
                 Text("Password"),
